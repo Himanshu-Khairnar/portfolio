@@ -59,9 +59,10 @@ const page = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="c">Web Development</SelectItem>
-                    <SelectItem value="ca">UI/UX Design</SelectItem>
-                    <SelectItem value="cd">Game Development</SelectItem>
+                    <SelectItem value="wd">Web Development</SelectItem>
+                    <SelectItem value="ui">UI/UX Design</SelectItem>
+                    <SelectItem value="gd">Game Development</SelectItem>
+                    <SelectItem value="ad">App Developement</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

@@ -7,8 +7,8 @@ import React from 'react'
 
 const links = 
 [
-  { name: "About me", path: '/about' },
-  { name: "skills", path: '/skills' },
+  { name: "Home", path: '/' },
+  { name: "service", path: '/service' },
   { name: 'resume', path: '/resume' },
   { name: 'work', path: '/work' },
   { name: 'contact', path: '/contact' }

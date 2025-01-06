@@ -6,7 +6,8 @@ import { Button } from './ui/button'
 import MobileNav from './MobileNav'
 
 const Header = () => {
-    return (<header className='py-8 xl:py-12 text-white'>
+    return (
+    <header className='py-8 xl:py-12 text-white'>
         <div className="container mx-auto flex justify-between items-center">
 
             <Link href='/'>
@@ -23,10 +24,11 @@ const Header = () => {
             </div>
 
             <div className="xl:hidden">
-                <MobileNav/>
+                <MobileNav />
             </div>
         </div>
-    </header>)
+    </header>
+    )
 }
 
 export default Header
