@@ -15,7 +15,7 @@ import { delay, motion } from "framer-motion";
 
 const about = {
   title: "About me",
-  description: "lfoe",
+  description: "I am a passionate and driven software engineer with expertise in web and app development. I enjoy crafting seamless user experiences and building scalable, robust applications. My diverse skill set allows me to adapt to different projects and deliver top-quality results.",
   info: [
     {
       fieldName: "Name",
@@ -51,73 +51,88 @@ const about = {
     },
   ],
 };
+
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "oef",
+  description: "Over the years, I have honed my skills by working on diverse projects and gaining real-world experience in software development. Here are some highlights of my professional journey:",
   items: [
     {
       company: "Prodigy Infotech",
       position: "Full Stack Developer Intern",
       duration: "2024 Dec - 2025 January",
+      description: "Worked on building responsive web applications, integrating APIs, and optimizing code for performance. Collaborated with cross-functional teams to deliver high-quality solutions.",
     },
   ],
 };
+
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "oef",
+  description: "Education has been the foundation of my skills and knowledge, equipping me to tackle challenges and excel in my field.",
   items: [
     {
       institution: "St. Francis High School",
       degree: "SSC 10TH Exam",
       duration: "2022",
+      description: "Completed secondary education with a strong focus on science and mathematics, laying the groundwork for my technical expertise.",
     },
     {
       institution: "Government Polytechnic Mumbai",
       degree: "Diploma in Computer Science",
       duration: "2022-2025",
+      description: "Currently pursuing a diploma in Computer Science, acquiring in-depth knowledge in programming, algorithms, and software development.",
     },
   ],
 };
+
 const skills = {
   title: "My skills",
-  description: "or",
+  description: "Here are some of the key technologies and tools I have mastered over the years, enabling me to deliver exceptional results:",
   skillList: [
     {
       icons: <FaHtml5 />,
       name: "HTML",
+      description: "Proficient in writing semantic, accessible, and SEO-friendly HTML code.",
     },
     {
       icons: <FaCss3 />,
       name: "CSS",
+      description: "Skilled in creating responsive designs and implementing modern layouts with CSS and preprocessors.",
     },
     {
       icons: <FaJs />,
       name: "JavaScript",
+      description: "Experienced in writing efficient and clean JavaScript code for dynamic applications.",
     },
     {
       icons: <FaReact />,
       name: "ReactJs",
+      description: "Expertise in building reusable components and managing state in React applications.",
     },
     {
       icons: <SiNextdotjs />,
       name: "NextJS",
+      description: "Specialized in server-side rendering and building scalable web applications using Next.js.",
     },
     {
       icons: <SiTailwindcss />,
       name: "TailwindCss",
+      description: "Capable of rapidly building visually stunning designs using TailwindCSS utility classes.",
     },
     {
       icons: <FaNodeJs />,
       name: "NodeJs",
+      description: "Experienced in building backend services and RESTful APIs using Node.js.",
     },
     {
       icons: <FaFigma />,
       name: "Figma",
+      description: "Proficient in designing wireframes and prototypes using Figma for an intuitive user experience.",
     },
   ],
 };
+
 const page = () => {
   return (
     <motion.div
