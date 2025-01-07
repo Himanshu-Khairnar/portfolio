@@ -22,8 +22,8 @@ const projects = [
       { name: "React.js" },
       { name: "MongoDB" },
     ],
-    image: '/assets/work/thumb1.png',
-    live: "https://example-blog-site.com",
+    image: '/blog.png',
+    live: "",
     github: "https://github.com/Himanshu-Khairnar/blog-next-js",
   },
   {
@@ -36,8 +36,8 @@ const projects = [
       { name: "CSS" },
       { name: "Context API" },
     ],
-    image: '/assets/work/thumb2.png',
-    live: "https://example-shopping-site.com",
+    image: '/ecommerce.jpg',
+    live: "",
     github: "https://github.com/Himanshu-Khairnar/React-Shopping-Site",
   },
   {
@@ -50,7 +50,7 @@ const projects = [
       { name: "Express.js" },
       { name: "MongoDB" },
     ],
-    image: '/assets/work/thumb3.png',
+    image: '/VideoS.png',
     live: "",
     github: "https://github.com/Himanshu-Khairnar/VideoStreamer",
   },
@@ -65,8 +65,8 @@ const projects = [
       { name: "MongoDB" },
       { name: "React.js" },
     ],
-    image: '/assets/work/thumb4.png',
-    live: "https://example-delivery-dashboard.com",
+    image: '/deliveryP.png',
+    live: "",
     github: "https://github.com/Himanshu-Khairnar/deliveryDashboard",
   },
 ];
@@ -150,7 +150,7 @@ const Page = () => {
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full">
-                      <Image src={project.image} fill className="object-cover" alt={project.title} />
+                      <Image src={project.image} fill className="object-fill" alt={project.title} />
                     </div>
                   </div>
                 </SwiperSlide>
