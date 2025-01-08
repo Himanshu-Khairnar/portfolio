@@ -9,7 +9,6 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import PageTransitions from "@/components/PageTransitions";
-import Stairs from "@/components/ui/Stairs";
 import StairTransition from "@/components/ui/StairTransition";
 
 const JetBrainsMono = JetBrains_Mono({

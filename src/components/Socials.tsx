@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
 const socials = [
     { icons: <FaGithub />, path: '' },

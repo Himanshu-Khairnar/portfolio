@@ -1,4 +1,3 @@
-import { headers } from 'next/headers'
 import Link from 'next/link'
 import React from 'react'
 import Nav from './Nav'

@@ -41,10 +41,10 @@ const Page: React.FC = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          process.env.SERVICE_ID || '', 
+          process.env.SERVICE_ID || '',
           process.env.TEMPLATE_ID || '',
           form.current,
-          process.env.PUBLIC_KEY 
+          process.env.PUBLIC_KEY
         )
         .then(
           () => {
@@ -76,12 +76,12 @@ const Page: React.FC = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               onSubmit={sendEmail}
             >
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
                 Feel free to reach out for any project inquiries, collaboration
-                opportunities, or just to say hello. I'm always open to
+                opportunities, or just to say hello. I&apos;m always open to
                 discussing new ideas and turning them into impactful solutions.
-                Let's connect and build something amazing together!
+                Let&apos;s connect and build something amazing together!
               </p>
 
               <div className="grid grid-cols-1 gap-6">
