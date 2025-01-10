@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { CiMenuFries } from 'react-icons/ci';
 
 const links = [
-    { name: 'About me', path: '/about' },
-    { name: 'Skills', path: '/skills' },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/service' },
     { name: 'Resume', path: '/resume' },
     { name: 'Work', path: '/work' },
     { name: 'Contact', path: '/contact' },
@@ -25,7 +25,7 @@ const MobileNav = () => {
                     <div className="mt-32 mb-40 text-center text-2xl">
                         <Link href="/">
                             <h1 className="text-4xl font-semibold">
-                                Luke<span className="text-accent">.</span>
+                                Himanshu<span className="text-accent">.</span>
                             </h1>
                         </Link>
                     </div>
