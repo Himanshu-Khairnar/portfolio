@@ -1,6 +1,3 @@
-import myResume from "../assets/resume.pdf";
-
-
 
 export var help = [
   "<br>",
@@ -15,7 +12,6 @@ export var help = [
   '<span class="command">clear</span>              Clear terminal',
   "<br>",
 ];
-
 
 export var aboutme = [
   "<br>",
@@ -45,9 +41,9 @@ export var aboutme = [
 ];
 
 export var github = [
-    "<br>",
-    'You can find most of my projects on <a href="https://github.com/Himanshhu-Khairnar"><span class="green-glow">GitHub</span></a>.',
-    "<br>",
+  "<br>",
+  'You can find most of my projects on <a href="https://github.com/Himanshhu-Khairnar"><span class="green-glow">GitHub</span></a>.',
+  "<br>",
 ];
 
 export var experience = [
@@ -82,7 +78,7 @@ export var education = [
 
 export var resume = [
   "<br>",
-  `You can download my resume from <a href="${myResume}" target="_blank"><span class="green-glow">here</span></a>.`,
+  `You can download my resume from <a href="/Resume.pdf" target="_blank"><span class="green-glow">here</span></a>.`,
   "<br>",
 ];
 
@@ -123,10 +119,10 @@ export var social = [
   "<br>",
 ];
 
-    export var projects = [
-    "<br>",
-    "Most of my projects are on GitHub... ⚙️",
-    "<br>",
+export var projects = [
+  "<br>",
+  "Most of my projects are on GitHub... ⚙️",
+  "<br>",
 
   "<span class='white-glow'>VideoStreamer 🎬</span>",
   "  ├─ A web application to stream and manage video content,",
@@ -171,4 +167,3 @@ export var banner = [
   "<span class='color2'>Tip: Try running</span> <span class='command'>'projects'</span> <span class='color2'>or</span> <span class='command'>'aboutme'</span> <span class='color2'>to get started.</span>",
   "<br>",
 ];
-
