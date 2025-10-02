@@ -3,12 +3,12 @@ export var help = [
   "<br>",
   '<span class="command">aboutme</span>            Who am I?',
   '<span class="command">experience</span>         View my relevant work experience',
-  '<span class="command">certifications</span>     Display my professional achievements',
+  '<span class="command">skills</span>             View my technical skills',
   '<span class="command">education</span>          See where and what I study',
   '<span class="command">resume</span>             Did you save my CV?',
   '<span class="command">projects</span>           View my projects',
   '<span class="command">contact</span>            View my socials',
-  '<span class="command">resume</span>            Download my resume',
+  '<span class="command">resume</span>             Download my resume',
   '<span class="command">clear</span>              Clear terminal',
   "<br>",
 ];
@@ -148,12 +148,12 @@ export var projects = [
 
 export var banner = [
   `<pre class="green-glow">  
-                                    ░  ░░░░  ░░        ░░  ░░░░  ░░░      ░░░   ░░░  ░░░      ░░░  ░░░░  ░░  ░░░░  ░
-                                    ▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒   ▒▒   ▒▒  ▒▒▒▒  ▒▒    ▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒
-                                    ▓        ▓▓▓▓▓  ▓▓▓▓▓        ▓▓  ▓▓▓▓  ▓▓  ▓  ▓  ▓▓▓      ▓▓▓        ▓▓  ▓▓▓▓  ▓
-                                    █  ████  █████  █████  █  █  ██        ██  ██    ████████  ██  ████  ██  ████  █
-                                    █  ████  ██        ██  ████  ██  ████  ██  ███   ███      ███  ████  ███      ██
-</pre>`,
+░  ░░░░  ░░        ░░  ░░░░  ░░░      ░░░   ░░░  ░░░      ░░░  ░░░░  ░░  ░░░░  ░░░░░░░░  ░░░░  ░░  ░░░░  ░░░      ░░░        ░░       ░░░   ░░░  ░░░      ░░░       ░░
+▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒   ▒▒   ▒▒  ▒▒▒▒  ▒▒    ▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒  ▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒    ▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒
+▓        ▓▓▓▓▓  ▓▓▓▓▓        ▓▓  ▓▓▓▓  ▓▓  ▓  ▓  ▓▓▓      ▓▓▓        ▓▓  ▓▓▓▓  ▓▓▓▓▓▓▓▓     ▓▓▓▓▓        ▓▓  ▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓       ▓▓▓  ▓  ▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓
+█  ████  █████  █████  █  █  ██        ██  ██    ████████  ██  ████  ██  ████  ████████  ███  ███  ████  ██        █████  █████  ███  ███  ██    ██        ██  ███  ██
+█  ████  ██        ██  ████  ██  ████  ██  ███   ███      ███  ████  ███      █████████  ████  ██  ████  ██  ████  ██        ██  ████  ██  ███   ██  ████  ██  ████  █
+                                                                                                                                                                      </pre>`,
   '<span class="color2">Welcome to my portfolio website with an interactive terminal.</span>',
   '<span class="color2">To get a list of available commands, type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
   "<br>",

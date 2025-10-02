@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect,useRef } from "react";
 import * as info from "./Constant/Constant";
 let commands = {
   help: info.help,
@@ -7,7 +7,7 @@ let commands = {
   experience: info.experience,
   education: info.education,
   skills: info.skills,
-  social: info.social,
+  contact: info.social,
   projects: info.projects,
   banner: info.banner,
   github: info.github,
@@ -19,14 +19,26 @@ function App() {
   const [history, setHistory] = useState([
     { cmd: "himanshu@portfolio:~$ <br>", res: commands.banner },
   ]);
-  console.log(history[0].res);
+  const inputRef = useRef(null);
+
+
+   useEffect(() => {
+    inputRef.current.focus();
+
+    const handleClick = () => inputRef.current.focus();
+    window.addEventListener("click", handleClick);
+
+    return () => window.removeEventListener("click", handleClick);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    let command = input.toLowerCase();
+
     let output =
-      commands[input.toLowerCase()] ||
+      commands[command] ||
       `Command not found: ${input}. Try 'help'.`;
-    if (input.toLowerCase() === "clear") {
+    if (command === "clear") {
       setHistory([{ cmd: "himanshu@portfolio:~$ ", res: commands["banner"] }]);
     } else {
       setHistory([
@@ -39,21 +51,18 @@ function App() {
   };
 
   return (
-    <div
-      className="w-full h-screen p-4  text-white   font-mono selection:bg-fuchsia-300 selection:text-fuchsia-900 transition-all
-    "
-    >
-      <div className="flex gap-2">
-        <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-        <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-        <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-      </div>
+    <div>
+      <div className="circleButton">
+          <span className="roundCircle circleColorRed "></span>
+          <span className="roundCircle circleColorYellow"></span>
+          <span className="roundCircle circleColorGreen"></span>
+        </div>
       <div className="">
-        <div className=" rounded-lg p-4 h-min overflow-y-auto  ">
+        <div className="  ">
           {history.map((h, i) => (
             <div key={i}>
               <p
-                className="text-green-300 "
+                className="textColor"
                 dangerouslySetInnerHTML={{ __html: h.cmd }}
               ></p>
               {Array.isArray(h.res) ? (
@@ -66,21 +75,23 @@ function App() {
             </div>
           ))}
         </div>
-        <form onSubmit={handleSubmit} className="mt-2 pl-4 flex gap-0">
-          <span className="mr-2">{"himanshu@portfolio:~$"}</span>
-          <div className="flex">
-            <div className="relative">
-              <input
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                className="outline-none text-green-400 caret-transparent bg-transparent"
-                autoFocus
-                style={{ width: `${input.length + 1}ch` }} // expand as you type
-              />
-              <span className="absolute right-0 top-0 inline-block w-[8px] h-[1.4em] bg-green-400 animate-blink"></span>
-            </div>
-          </div>
-        </form>
+    <form onSubmit={handleSubmit} className="form">
+  <span className="prompt">{"himanshu@portfolio:~$  "}</span>
+  <div className="form-flex">
+    <div className="input-wrapper">
+      <input
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        ref={inputRef}
+        className="input"
+        autoFocus
+        style={{ width: `${input.length + 1}ch` }} 
+      />
+      <span className="cursor"></span>
+    </div>
+  </div>
+</form>
+
       </div>
     </div>
   );
